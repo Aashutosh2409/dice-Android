@@ -52,11 +52,14 @@ public class  MainActivity extends AppCompatActivity {
                 Random rand =new Random();
                 int n=rand.nextInt(6);
 //                int k=rand.nextInt(6);
-                Log.d("randomNumber1","generating Number is : " +n);
+                int p=n+1;
+                Log.d("randomNumber1","generating Number is : " +p);
+
                 ileft.setImageResource(arrayImg[n]);
 
                 n=rand.nextInt(6);
-                Log.d("randomNumber2","generating Number is : " +n);
+                p=n+1;
+                Log.d("randomNumber2","generating Number is : " +p);
                 iright.setImageResource(arrayImg[n]);
 
             }
