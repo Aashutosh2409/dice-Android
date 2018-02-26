@@ -64,6 +64,7 @@ public class  MainActivity extends AppCompatActivity {
                 Log.d("randomNumber2","generating Number is : " +j);
                 iright.setImageResource(arrayImg[n]);
                 int l=p+j;
+                //Added Total Score View
                 tv.setText(java.text.NumberFormat.getInstance().format(l));
             }
         });
