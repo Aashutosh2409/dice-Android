@@ -1,11 +1,13 @@
 package com.aashutoshsingh.dicee;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -18,7 +20,7 @@ public class  MainActivity extends AppCompatActivity {
 
         Button rollbutton;
         rollbutton = (Button) findViewById(R.id.btn1);
-
+        final TextView tv = (TextView) findViewById(R.id.num);
 //          2 ways of assigning...final -> we are not going to change the content inside in another part of this app
 //        final ImageView ileft = (ImageView) findViewById(R.id.il);
 //        ImageView iright = (ImageView) findViewById(R.id.ir);
@@ -58,10 +60,11 @@ public class  MainActivity extends AppCompatActivity {
                 ileft.setImageResource(arrayImg[n]);
 
                 n=rand.nextInt(6);
-                p=n+1;
-                Log.d("randomNumber2","generating Number is : " +p);
+                int j=n+1;
+                Log.d("randomNumber2","generating Number is : " +j);
                 iright.setImageResource(arrayImg[n]);
-
+                int l=p+j;
+                tv.setText(java.text.NumberFormat.getInstance().format(l));
             }
         });
     }

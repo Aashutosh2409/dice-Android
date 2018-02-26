@@ -51,12 +51,35 @@
             android:src="@drawable/dice1"
             android:id="@+id/ir"
             android:layout_weight="1"/>
+
+
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num"
+            android:layout_above="@id/btn1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:paddingBottom="13sp"
+            android:textSize="@dimen/size1"
+            android:text="Hit it!!"
+            android:textColor="@color/white"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/num"
+            android:layout_toLeftOf="@+id/num"
+            android:layout_toStartOf="@+id/num"
+            android:text="Total Score: "
+            android:textSize="@dimen/size1"
+            android:textColor="@color/white"
+            />
         <Button
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
